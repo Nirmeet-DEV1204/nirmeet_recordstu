@@ -1,0 +1,43 @@
+@page
+@model RazorPagesrecordstu.Pages_recordstu.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>recordstu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.recordstu.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.recordstu.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.recordstu.DOB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.recordstu.DOB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.recordstu.Program)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.recordstu.Program)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.recordstu.Credit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.recordstu.Credit)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.recordstu.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
